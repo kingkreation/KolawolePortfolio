@@ -31,29 +31,29 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <h1 className="font-montserrat font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-4 animate-fadeInUp">
+          <h1 className="font-montserrat font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-4 animate-fadeInUp animate-glow">
             Joshua Kolawole
           </h1>
 
-          <div className="font-montserrat font-semibold text-lg md:text-xl text-gold mb-6 animate-slideInLeft">
+          <div className="font-montserrat font-semibold text-lg md:text-xl gradient-text mb-6 animate-slideInLeft">
             Tech-Savvy Creative | Photo & Video Editor | Graphics Designer | Programmer | 
             Musician | Photographer | Student Leader | Sound & Phone Engineer
           </div>
 
-          <div className="font-montserrat italic text-2xl md:text-3xl text-gold mb-8 animate-fadeInUp delay-300">
+          <div className="font-montserrat italic text-2xl md:text-3xl bg-gradient-to-r from-gold to-accent bg-clip-text text-transparent mb-8 animate-fadeInUp delay-300">
             "Purpose over Popularity | Impact over Impression"
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="bg-gold text-navy px-8 py-3 rounded-full font-montserrat font-semibold hover:bg-white hover:text-navy transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-gold to-accent text-navy px-8 py-3 rounded-full font-montserrat font-semibold hover:from-accent hover:to-gold hover:scale-105 transition-all duration-300 transform shadow-lg"
             >
               Discover My Story
             </button>
             <button
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-2 border-gold text-gold px-8 py-3 rounded-full font-montserrat font-semibold hover:bg-gold hover:text-navy transition-all duration-300"
+              className="border-2 border-accent text-accent px-8 py-3 rounded-full font-montserrat font-semibold hover:bg-accent hover:text-navy transition-all duration-300 backdrop-blur-sm bg-white/10"
             >
               Let's Connect
             </button>

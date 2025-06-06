@@ -67,18 +67,22 @@ export default function SkillsSection() {
 
         {/* Skills Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
-          {skills.map((skill) => {
+          {skills.map((skill, index) => {
             const IconComponent = skill.icon;
             return (
               <div
                 key={skill.name}
-                className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+                className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <IconComponent className="text-gold mx-auto mb-3" size={48} />
-                <h3 className="font-montserrat font-semibold text-navy mb-2">
+                <div className="relative">
+                  <IconComponent className="text-accent group-hover:text-gold mx-auto mb-3 transition-colors duration-300" size={48} />
+                  <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-gold/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <h3 className="font-montserrat font-semibold text-navy mb-2 group-hover:text-accent transition-colors duration-300">
                   {skill.name}
                 </h3>
-                <p className="text-gray-600 text-sm">{skill.description}</p>
+                <p className="text-gray-600 text-sm group-hover:text-gray-700 transition-colors duration-300">{skill.description}</p>
               </div>
             );
           })}
@@ -97,7 +101,7 @@ export default function SkillsSection() {
                 </div>
                 <div className="flex-1 bg-gray-200 rounded-full h-4">
                   <div
-                    className="skill-bar bg-gold h-4 rounded-full"
+                    className="skill-bar bg-gradient-to-r from-accent to-gold h-4 rounded-full shadow-lg"
                     style={{
                       width: isVisible ? `${skill.percentage}%` : '0%'
                     }}

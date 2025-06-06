@@ -48,24 +48,28 @@ export default function ProjectsSection() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.id}
-              className="project-card bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
+              className="project-card bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 group"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <img
-                src={project.image}
-                alt={project.alt}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
 
               <div className="p-6">
-                <h3 className="font-montserrat font-bold text-xl text-navy mb-3">
+                <h3 className="font-montserrat font-bold text-xl text-navy mb-3 group-hover:text-accent transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-gold font-semibold mb-3">{project.date}</p>
-                <p className="text-gray-700 mb-4">{project.description}</p>
-                <button className="bg-gold text-navy px-6 py-2 rounded-full font-semibold hover:bg-navy hover:text-gold transition-colors duration-300 flex items-center gap-2">
+                <p className="text-accent font-semibold mb-3">{project.date}</p>
+                <p className="text-gray-700 mb-4 group-hover:text-gray-600 transition-colors duration-300">{project.description}</p>
+                <button className="bg-gradient-to-r from-accent to-gold text-white px-6 py-2 rounded-full font-semibold hover:from-gold hover:to-accent hover:scale-105 transition-all duration-300 flex items-center gap-2 shadow-lg">
                   {project.buttonText}
                   <ExternalLink size={16} />
                 </button>
