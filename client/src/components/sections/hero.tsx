@@ -1,4 +1,5 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Sparkles, Code, Music, Camera } from "lucide-react";
+import ParticleSystem from "@/components/particles";
 
 export default function HeroSection() {
   return (
@@ -6,14 +7,24 @@ export default function HeroSection() {
       id="hero"
       className="min-h-screen gradient-hero pattern-overlay flex items-center justify-center relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-black/20"></div>
+      <ParticleSystem />
+      <div className="absolute inset-0 bg-black/10"></div>
+      
+      {/* Floating Icons */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Code className="absolute top-20 left-10 text-gold/30 animate-float" size={32} style={{animationDelay: '0s'}} />
+        <Music className="absolute top-32 right-16 text-accent/30 animate-float" size={28} style={{animationDelay: '2s'}} />
+        <Camera className="absolute bottom-32 left-20 text-gold/30 animate-float" size={30} style={{animationDelay: '4s'}} />
+        <Sparkles className="absolute top-1/2 right-8 text-accent/30 animate-float" size={24} style={{animationDelay: '1s'}} />
+      </div>
+      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           {/* Professional Headshot */}
           <div className="mb-8 flex justify-center">
             <div className="w-48 h-48 rounded-full border-4 border-gold shadow-2xl overflow-hidden animate-pulse-gold">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
+                src="/attached_assets/Picsart_25-04-30_12-05-12-602.png"
                 alt="Joshua Kolawole Professional Headshot"
                 className="w-full h-full object-cover"
               />

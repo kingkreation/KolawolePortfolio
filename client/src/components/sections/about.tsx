@@ -8,7 +8,7 @@ export default function AboutSection() {
           {/* Left: Image */}
           <div className="order-2 lg:order-1">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000"
+              src="/attached_assets/Picsart_25-04-30_12-05-12-602.png"
               alt="Joshua Kolawole in action - editing or designing"
               className="rounded-2xl shadow-2xl w-full"
             />
