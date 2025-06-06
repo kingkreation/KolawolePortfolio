@@ -10,42 +10,36 @@ import EducationSection from "@/components/sections/education";
 import TestimonialsSection from "@/components/sections/testimonials";
 import ContactSection from "@/components/sections/contact";
 import Lightbox from "@/components/lightbox";
-import ScrollToTop from "@/components/scroll-to-top";
-import LoadingScreen from "@/components/loading-screen";
 
 export default function HomePage() {
   return (
-    <>
-      <LoadingScreen />
-      <div className="min-h-screen">
-        <Navigation />
-        <HeroSection />
-        <AboutSection />
-        <ExperienceSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <PortfolioSection />
-        <VolunteeringSection />
-        <EducationSection />
-        <TestimonialsSection />
-        <ContactSection />
-        <Lightbox />
-        <ScrollToTop />
-        
-        {/* Footer */}
-        <footer className="bg-navy py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <p className="text-white">
-                © 2025 Joshua Kolawole Obaloluwa. All Rights Reserved.
-              </p>
-              <p className="text-gold mt-2 italic">
-                "Purpose over Popularity | Impact over Impression"
-              </p>
-            </div>
+    <div className="min-h-screen">
+      <Navigation />
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <PortfolioSection />
+      <VolunteeringSection />
+      <EducationSection />
+      <TestimonialsSection />
+      <ContactSection />
+      <Lightbox />
+      
+      {/* Footer */}
+      <footer className="bg-navy py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-white">
+              © 2025 Joshua Kolawole Obaloluwa. All Rights Reserved.
+            </p>
+            <p className="text-gold mt-2 italic">
+              "Purpose over Popularity | Impact over Impression"
+            </p>
           </div>
-        </footer>
-      </div>
-    </>
+        </div>
+      </footer>
+    </div>
   );
 }

@@ -226,21 +226,6 @@
     animation: gradient-shift 8s ease infinite;
   }
   
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .hover-lift {
-    transition: all 0.3s ease;
-  }
-  
-  .hover-lift:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  }
-  
   .particles {
     position: absolute;
     width: 100%;

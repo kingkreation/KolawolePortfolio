@@ -22,41 +22,38 @@ export default function HeroSection() {
         <div className="text-center">
           {/* Professional Headshot */}
           <div className="mb-8 flex justify-center">
-            <div className="relative w-48 h-48">
-              <div className="w-full h-full rounded-full border-4 border-gold shadow-2xl overflow-hidden animate-pulse-gold hover-lift">
-                <img
-                  src="/attached_assets/Picsart_25-04-30_12-05-12-602.png"
-                  alt="Joshua Kolawole Professional Headshot"
-                  className="w-full h-full object-cover animate-glow"
-                />
-              </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-gold/20 rounded-full blur-xl animate-pulse-gold"></div>
+            <div className="w-48 h-48 rounded-full border-4 border-gold shadow-2xl overflow-hidden animate-pulse-gold">
+              <img
+                src="/attached_assets/Picsart_25-04-30_12-05-12-602.png"
+                alt="Joshua Kolawole Professional Headshot"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
-          <h1 className="font-montserrat font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-4 animate-fadeInUp animate-glow">
+          <h1 className="font-montserrat font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-4 animate-fadeInUp">
             Joshua Kolawole
           </h1>
 
-          <div className="font-montserrat font-semibold text-lg md:text-xl gradient-text mb-6 animate-slideInLeft">
+          <div className="font-montserrat font-semibold text-lg md:text-xl text-gold mb-6 animate-slideInLeft">
             Tech-Savvy Creative | Photo & Video Editor | Graphics Designer | Programmer | 
             Musician | Photographer | Student Leader | Sound & Phone Engineer
           </div>
 
-          <div className="font-montserrat italic text-2xl md:text-3xl bg-gradient-to-r from-gold to-accent bg-clip-text text-transparent mb-8 animate-fadeInUp delay-300">
+          <div className="font-montserrat italic text-2xl md:text-3xl text-gold mb-8 animate-fadeInUp delay-300">
             "Purpose over Popularity | Impact over Impression"
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="bg-gradient-to-r from-gold to-accent text-navy px-8 py-3 rounded-full font-montserrat font-semibold hover:from-accent hover:to-gold hover:scale-105 transition-all duration-300 transform shadow-lg"
+              className="bg-gold text-navy px-8 py-3 rounded-full font-montserrat font-semibold hover:bg-white hover:text-navy transition-all duration-300 transform hover:scale-105"
             >
               Discover My Story
             </button>
             <button
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-2 border-accent text-accent px-8 py-3 rounded-full font-montserrat font-semibold hover:bg-accent hover:text-navy transition-all duration-300 backdrop-blur-sm bg-white/10"
+              className="border-2 border-gold text-gold px-8 py-3 rounded-full font-montserrat font-semibold hover:bg-gold hover:text-navy transition-all duration-300"
             >
               Let's Connect
             </button>
