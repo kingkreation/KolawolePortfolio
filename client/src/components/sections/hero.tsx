@@ -22,12 +22,15 @@ export default function HeroSection() {
         <div className="text-center">
           {/* Professional Headshot */}
           <div className="mb-8 flex justify-center">
-            <div className="w-48 h-48 rounded-full border-4 border-gold shadow-2xl overflow-hidden animate-pulse-gold">
-              <img
-                src="/attached_assets/Picsart_25-04-30_12-05-12-602.png"
-                alt="Joshua Kolawole Professional Headshot"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative w-48 h-48">
+              <div className="w-full h-full rounded-full border-4 border-gold shadow-2xl overflow-hidden animate-pulse-gold hover-lift">
+                <img
+                  src="/attached_assets/Picsart_25-04-30_12-05-12-602.png"
+                  alt="Joshua Kolawole Professional Headshot"
+                  className="w-full h-full object-cover animate-glow"
+                />
+              </div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-gold/20 rounded-full blur-xl animate-pulse-gold"></div>
             </div>
           </div>
 

@@ -16,7 +16,7 @@ export default function AboutSection() {
 
           {/* Right: Content */}
           <div className="order-1 lg:order-2">
-            <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-navy mb-8">
+            <h2 className="font-montserrat font-bold text-4xl md:text-5xl gradient-text mb-8 animate-fadeInUp">
               About Me
             </h2>
 
