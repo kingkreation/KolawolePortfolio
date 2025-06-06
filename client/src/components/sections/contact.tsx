@@ -55,7 +55,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 gradient-hero pattern-overlay relative">
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-white text-center mb-8">
           Let's Connect
@@ -132,7 +132,7 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gold text-navy hover:bg-white hover:text-navy font-montserrat font-bold text-lg py-3 transition-all duration-300 transform hover:scale-105"
+                className="w-full bg-gradient-to-r from-gold to-accent text-navy hover:from-accent hover:to-gold font-montserrat font-bold text-lg py-3 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
